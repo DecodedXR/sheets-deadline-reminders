@@ -44,6 +44,7 @@ It sends anything already due right away, then checks every day around 8:00.
 ## More free Sheets tools
 
 - [Sheets Mail Merge](https://github.com/DecodedXR/sheets-mail-merge): send a personalized email to every row, YAMM-style.
+- [Sheets Doc Merge](https://github.com/DecodedXR/sheets-doc-merge): one PDF per row from a Google Docs template (certificates, invoices, letters).
 
 ## License
 
