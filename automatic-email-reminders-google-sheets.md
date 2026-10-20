@@ -58,6 +58,9 @@ The script sends any reminders that are already due, then runs on its own every 
 - Each reminder is recorded as `Reminded <date> for <due date>`, so the same deadline is never reminded twice.
 - **Recurring deadlines:** change the due date to the next one (next month's invoice, next year's renewal) and the row is reminded again for the new date.
 - Failed sends are marked `ERROR: ...` and retried the next day.
+- **Stop reminding finished items:** add a column named **Done** (or **Paid**, or **Completed**) and insert checkboxes (**Insert → Checkbox**). Ticked rows are skipped.
+
+Tracking things that expire (certifications, contracts, licenses)? See [expiration date reminders](expiration-date-reminders-google-sheets.html) for a 30-day setup.
 
 To change the 3-day window or the 8:00 run time, edit `DAYS_BEFORE` and `RUN_HOUR` at the top of the script.
 

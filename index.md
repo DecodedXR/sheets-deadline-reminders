@@ -12,6 +12,7 @@ Email people automatically before a due date in your Google Sheet. One free Apps
 ## Guides
 
 - [How to send automatic email reminders from Google Sheets](automatic-email-reminders-google-sheets.html)
+- [Expiration date reminders from Google Sheets](expiration-date-reminders-google-sheets.html)
 
 ## Get it
 

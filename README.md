@@ -8,6 +8,7 @@ Automatically email people before a due date in a Google Sheet: invoices, renewa
 - Emails each row when its **Due Date** is 3 days away or less (overdue rows too)
 - Writes a **Reminder Status** column, so nobody is reminded twice for the same date
 - Change a row's due date (say, next month's renewal) and it is reminded again for the new date
+- Optional **Done** or **Paid** checkbox column: tick it and that row's reminders stop
 - Write the reminder as a normal Gmail draft with `{{Column Name}}` placeholders
 
 New to this? Read the [step-by-step guide](https://decodedxr.github.io/sheets-deadline-reminders/automatic-email-reminders-google-sheets.html).

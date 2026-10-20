@@ -5,6 +5,7 @@
  * column is created automatically. Compose a Gmail DRAFT with {{Column Name}}
  * placeholders, then use 📅 Reminders → Turn On Daily Reminders.
  * Change a row's due date and it is reminded again for the new date.
+ * Optional "Done" or "Paid" column: tick it (or type anything but FALSE/no) to stop that row's reminders.
  */
 
 const EMAIL_COL = 'Email';
@@ -63,6 +64,7 @@ function sendReminders() {
   const headers = shown[0];
   const emailIdx = headers.indexOf(EMAIL_COL);
   const dueIdx = headers.indexOf(DUE_COL);
+  const doneIdx = findDoneCol_(headers);
   if (emailIdx === -1 || dueIdx === -1) return 0;
   let statusIdx = headers.indexOf(STATUS_COL);
   if (statusIdx === -1) {
@@ -80,6 +82,7 @@ function sendReminders() {
     const email = String(shown[r][emailIdx]).trim();
     const due = values[r][dueIdx];
     if (!email || !(due instanceof Date)) continue;
+    if (doneIdx !== -1 && isDone_(shown[r][doneIdx])) continue;
     const dueStr = Utilities.formatDate(due, tz, 'yyyy-MM-dd');
     if (!shouldRemind_(dueStr, today, DAYS_BEFORE, String(shown[r][statusIdx] || ''))) continue;
     if (quota-- <= 0) break; // the next daily run picks up the rest
@@ -101,6 +104,16 @@ function sendReminders() {
     }
   }
   return sent;
+}
+
+/** An optional "Done", "Paid" or "Completed" column (exact header, any case). */
+function findDoneCol_(headers) {
+  return headers.findIndex(h => /^\s*(done|paid|completed?)\s*$/i.test(h));
+}
+
+/** Ticked checkbox or any text except FALSE/no/blank. */
+function isDone_(v) {
+  return !/^\s*(false|no|n)?\s*$/i.test(String(v));
 }
 
 /** Due within the window (or overdue) and not already reminded for this due date. */

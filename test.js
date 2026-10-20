@@ -9,3 +9,8 @@ assert.equal(r('2026-10-22', '2026-10-19', 3, 'Reminded 2026-10-19 for 2026-10-2
 assert.equal(r('2026-11-20', '2026-11-18', 3, 'Reminded 2026-10-19 for 2026-10-22'), true);  // new due date
 assert.equal(r('2026-10-22', '2026-10-19', 3, 'ERROR: bad address'), true); // errors retried
 console.log('ok');
+assert.equal(ctx.findDoneCol_(['Email', 'Due Date', 'Paid']), 2);
+assert.equal(ctx.findDoneCol_(['Email', 'Done?', 'Paid date']), -1);
+for (const v of ['TRUE', 'yes', 'x', '✓', 'Oct 3']) assert.equal(ctx.isDone_(v), true, v);
+for (const v of ['FALSE', 'no', 'N', '', ' ']) assert.equal(ctx.isDone_(v), false, v);
+console.log('ok done-column');
