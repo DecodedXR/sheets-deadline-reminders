@@ -1,0 +1,4 @@
+title: Free Deadline Reminders for Google Sheets
+description: Email people automatically before a due date in a Google Sheet. One free Apps Script file, no add-on.
+plugins:
+  - jekyll-sitemap
