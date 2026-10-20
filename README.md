@@ -44,6 +44,7 @@ It sends anything already due right away, then checks every day around 8:00.
 
 ## More free Sheets tools
 
+- [Form Prefill Links](https://github.com/DecodedXR/form-prefill-links): a pre-filled Google Form link for every row.
 - [Sheets to Calendar](https://github.com/DecodedXR/sheets-to-calendar): rows become Google Calendar events that stay in sync.
 - [Form Auto-Reply](https://github.com/DecodedXR/form-auto-reply): your own personalized email to every Google Form respondent.
 - [Sheets Mail Merge](https://github.com/DecodedXR/sheets-mail-merge): send a personalized email to every row, YAMM-style.
