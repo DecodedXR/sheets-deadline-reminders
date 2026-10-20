@@ -1,4 +1,5 @@
 # Free Deadline Reminders for Google Sheets
+n![Free Deadline Reminders for Google Sheets](assets/cover.png)
 
 Automatically email people before a due date in a Google Sheet: invoices, renewals, assignments, certifications, task owners. One Apps Script file, no add-on, no subscription. Your data never leaves your Google account.
 
