@@ -1,3 +1,5 @@
+/** @OnlyCurrentDoc */ // asks Google for access to this spreadsheet only, not all your sheets
+
 /**
  * Deadline Reminders for Google Sheets: emails each row's owner before a due date.
  *
