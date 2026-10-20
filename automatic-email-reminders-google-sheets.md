@@ -1,6 +1,7 @@
 ---
 title: How to send automatic email reminders from Google Sheets (free)
 description: Email people automatically before a due date listed in a Google Sheet. Free Apps Script, no add-on, runs daily and never sends the same reminder twice.
+image: https://decodedxr.github.io/sheets-deadline-reminders/assets/cover.png
 ---
 {% raw %}
 

@@ -1,6 +1,7 @@
 ---
 title: Expiration date reminders from Google Sheets (free email alerts)
 description: Get an email before a certification, license, contract, subscription or document expires, straight from a Google Sheet. Free Apps Script, runs daily, no add-on.
+image: https://decodedxr.github.io/sheets-deadline-reminders/assets/cover.png
 ---
 {% raw %}
 

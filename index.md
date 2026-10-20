@@ -1,6 +1,7 @@
 ---
 title: Free Deadline Reminders for Google Sheets
 description: Email people automatically before a due date in your Google Sheet. One free Apps Script file, no add-on.
+image: https://decodedxr.github.io/sheets-deadline-reminders/assets/cover.png
 ---
 
 # Free Deadline Reminders for Google Sheets
